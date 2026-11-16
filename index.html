@@ -1,15 +1,72 @@
 <!DOCTYPE html>
-<!-- Isaias Avalos 26/10/26 -->
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Baroja Digital | Diario de la comunidad del IES Pío Baroja</title>
-    <meta name="descripcion" content="Noticias del IES Pío Baroja: tecnología, ciberseguridad, vida en el centro, deportes y opinión.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Noticias del IES Pío Baroja: tecnología, ciberseguridad, vida en el centro, deportes y opinión.">
+  <title>El Baroja Digital | Diario de la comunidad del IES Pío Baroja</title>
 </head>
 <body>
+
+  <header>
+    <img src="img/logo-ies.jpg" width="400" height="400" alt="Logotipo del IES Pío Baroja">
     <h1>El Baroja Digital</h1>
-    <p>Diario de la comunidd del IES Pio Baroja desde 1989</p>
+    <p> Diario de la comunidad del IES Pío Baroja desde 1999 Jueves, 22 de octubre de 2026 Edición Madrid Año XXVII · Número 8.912</p>
+  
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Portada</a></li>
+        <li><a href="#tecnologia">Tecnología</a></li>
+        <li><a href="#ciberseguridad">Ciberseguridad</a></li>
+        <li><a href="#">Cafetería</a></li>
+        <li><a href="#">Deportes</a></li>
+        <li><a href="#">Opinión</a></li>
+        <li><a href="https://validator.w3.org">Validador del W3C</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <article id="tecnologia">
+      <p>Tecnología · Infraestructura</p>
+      <h2>El servidor del instituto resiste la avalancha de matrículas gracias a una caché de 200 líneas</h2>
+      <p>Dos alumnos de 2º de <abbr title="Desarrollo de Aplicaciones Multiplataforma">DAM</abbr> detectaron que cada consulta a la secretaría virtual leía el mismo fichero <abbr title="Extensible Markup Language">XML</abbr> de 40 MB. Su parche redujo el tiempo de respuesta de <strong>nueve segundos a 180 milisegundos</strong>.</p>
+
+      <figure>
+        <img src="img/servidor.jpg" width="1200" height="670" alt="Dos alumnos revisan en el laboratorio de informática las gráficas de carga del servidor">
+        <figcaption>Los autores del parche revisan las gráficas de carga en el laboratorio de informática. Foto: Redacción.</figcaption>
+      </figure>
+
+      <p>El lunes a las 9:00 se abrió el plazo de matrícula y, en menos de un cuarto de hora, la secretaría virtual dejó de responder. El origen no era la falta de memoria ni el ancho de banda: cada petición abría, analizaba y descartaba el mismo documento <abbr title="Extensible Markup Language">XML</abbr> con la oferta de módulos, más de 40 MB de etiquetas que nadie había tocado desde 2019.</p>
+
+      <p>La solución fue mantener el documento en memoria y volver a leerlo solo cuando el fichero cambia. <q>No inventamos nada; es lo que hace cualquier servidor en producción</q>, explica Lucía Navarro, una de las autoras. El departamento de Informática estudia ahora pasar la oferta a <abbr title="JavaScript Object Notation">JSON</abbr>.</p>
+
+      <p>Por Marta Robles</p>
+    </article>
+
+    <article id="ciberseguridad">
+      <p>Ciberseguridad</p>
+      <h2>Alerta por correos que suplantan al aula virtual del centro</h2>
+
+      <p>Los mensajes imitan el aviso "Tareas &amp; Calificaciones: tienes una entrega pendiente" y enlazan a una copia exacta de la página de acceso. Pista para detectarlos: <strong>el dominio termina en <code>.click</code></strong>.</p>
+
+      <p>Jefatura de estudios recuerda que nunca se pedirá la contraseña por correo y que cualquier duda se consulte con el departamento de Informática.</p>
+    </article>
+
+  </main>
+
+  <footer>
+    <address>
+      Aula 2.14<br>
+      Departamento de Informática<br>
+      IES Pío Baroja
+    </address>
+    <p>Correo de la redacción: <a href="mailto:redaccion@example.com">redaccion@example.com</a></p>
+    <p>Periódico ficticio creado para el módulo de Lenguajes de marcas. Ningún servidor resultó herido durante la elaboración de esta portada.</p>
+    <p>&copy; 2026 El Baroja Digital</p>
+  </footer>
 
 </body>
 </html>
